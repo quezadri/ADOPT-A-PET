@@ -22,11 +22,13 @@ print('Hello! Welcome to NJ Adopt A Pet Reminder!')
 
 # Sending mail from user
 # gmail account has to allow less secure 3rd party apps, used a throwaway account for this
+# replace astericks with real gmail and password
 def send_mail(subject, message):
-    EMAIL_ADDRESS = 'NJAdoptaPet@gmail.com'
-    EMAIL_PASSWORD = 'PythonLearning10!'
+    EMAIL_ADDRESS = '**********'
+    EMAIL_PASSWORD = '**********'
 
 #Spreadsheet of recievers who enroll in reminders
+#Create your own spreadsheet
     receiver_email_df = pd.read_excel('receivers.xlsx')
     receiver_email_list = list(receiver_email_df['address'])
     print(receiver_email_list)
