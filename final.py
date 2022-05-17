@@ -29,7 +29,7 @@ def send_mail(subject, message):
 
 #Spreadsheet of recievers who enroll in reminders
 #Create your own spreadsheet
-    receiver_email_df = pd.read_excel('receivers.xlsx')
+    receiver_email_df = pd.read_excel('receiver.xlsx')
     receiver_email_list = list(receiver_email_df['address'])
     print(receiver_email_list)
 
